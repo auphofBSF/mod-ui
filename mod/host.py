@@ -1773,7 +1773,7 @@ class Host(object):
 
         if len(data) == 3:
             if data[2] == "serial_midi_in":
-                return "ttymidi:MIDI_in"
+                return "ZynMidiRouter:main_out"
             if data[2] == "serial_midi_out":
                 return "ttymidi:MIDI_out"
             if data[2].startswith("playback_"):
